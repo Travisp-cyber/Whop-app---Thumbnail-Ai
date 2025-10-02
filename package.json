@@ -2,8 +2,10 @@
 	"name": "whop-nextjs-app-template",
 	"version": "0.1.0",
 	"private": true,
+	"type": "module",
 	"scripts": {
-		"dev": "whop-proxy --command 'next dev --turbopack'",
+		"dev": "next dev --turbopack",
+		"dev:proxy": "whop-proxy --command 'next dev --turbopack'",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint"
@@ -12,7 +14,7 @@
 		"@vercel/functions": "^2.0.3",
 		"@whop/api": "^0.0.50",
 		"@whop/react": "0.2.36",
-		"next": "15.3.2",
+		"next": "15.6.0-canary.39",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0"
 	},
